@@ -1,0 +1,77 @@
+
+body{
+background-color: black;
+font-family: cursive;
+font-style: oblique;
+}
+
+/*Pc/Laptot*/
+.container{
+   background-color: black;
+   height:2050px;
+   border-left: 6px solid red;
+   border-right: 6px solid red;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1200px){
+  .container{
+      height: 150em;
+      border-left: 0.5em solid red;
+      border-right: 0.5em solid red;
+  }
+
+}
+
+/*Phone*/
+@media only screen and (max-width: 468px){
+  .container{
+      height: 210em;
+      border-left: 0.5em solid red;
+      border-right: 0.5em solid red;
+  }
+}
+
+.imgCarr{
+  height: 20em;
+}
+
+.lineaRoja{
+  width: 80em;
+  border: 1px solid red;
+}
+
+.navBar{
+  background-color: black;
+}
+
+.seccion{
+  background-color: darkred;
+  color: white;
+}
+
+.card-body{
+  background-color:darkred;
+  color: white;
+}
+
+.list-group{
+  color: white;
+}
+.lista{
+  background-color:darkred;
+}
+
+footer{
+  background-color: red;
+}
+
+.nav-link{
+  color:red;
+  font-size: 1.2em;
+}
+
+.imgSM{
+  width: 35px;
+  border-radius: 2em;
+}

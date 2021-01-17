@@ -1,0 +1,334 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  background-image: url('../img/back.jpg'); 
+}
+
+.container{
+  margin: 1px auto;
+  padding: 0.5em;
+  width: 1200px;
+  height: 3100px;
+  border: 2px solid darkred;
+  border-radius: 1em; 
+  background-color: black;
+}
+
+.header{
+  background-color: black;
+  border-radius: 1em;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.header img{
+  display: block;
+  margin: auto;
+  margin: 3px auto;
+  padding: 0.5em;
+  width: 35%;
+  border-radius: 1em;
+}
+
+.nav {
+  margin: 1px;
+  padding: 0.5em; 
+  width: 98%;
+  background-color:azure;
+  border-radius: 1em;
+  background-image: url('../img/back.jpg'); 
+}
+
+.nav ul li{
+  display: inline;
+  padding: 1em;
+  margin-left: 4.8em;
+  font-size: 25px; 
+}
+
+.nav ul li a{
+  color: red;
+  text-decoration: none;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav ul li a:hover{
+ font-size: 2em;
+}
+
+.row{
+  text-align: center;
+  margin-top: 3em;
+  margin: 2px;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.row1{
+  margin: 1em;
+  padding: 0.5em;
+  margin-top: 3em;
+  height: 14%;
+  width: 96%;
+  overflow: hidden;
+}
+
+.row1 p{
+  margin-top: 1em;
+}
+
+.row1 .aside {
+  float: left;
+  margin: 1px;
+  padding: 1em;
+  width: 45%;
+  color: white;
+  border: 2px solid red;
+  border-radius: 1em;
+}
+
+.row1 .aside p{
+ padding: 1em;
+ margin-bottom: 1em;
+}
+
+.row1 .article img{
+  float: right;
+  margin: 2px;
+  padding: 0.5em;
+  width: 40%;
+  border: 4px solid red;
+  border-radius: 1em;
+  background-color: red;
+}
+
+.row2{
+  text-align: center;
+  margin-top: 3em;
+  margin: 2px;
+  padding: 1em;
+  margin-right: 4em;
+}
+
+.row3 div{
+  border: 1px solid red; 
+  display: block;
+  margin: auto;
+  border-radius: 2em;
+  width: 70%;
+}
+
+.row4{
+  margin: 1em;
+  padding: 0.5em;
+  width: 96%;
+  overflow: hidden;
+}
+
+.row4 img{
+  float: left;
+  padding: 0.5em;
+  text-align: center;
+  width: 20%;
+  margin-left: 13em;
+  background-color: red;
+  border-radius: 1em;
+}
+
+.row4 img:first-child{
+  height: 21em;
+}
+
+.row5 div{
+  border: 1px solid red; 
+  margin-left: 10em;
+  border-radius: 2em;
+  width: 70%;
+}
+
+.row6{
+  margin: 1em;
+  padding: 0.5em;
+  width: 96%;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.row6 .cell1r6{
+  margin: 1em;
+  padding: 0.5em;
+  width: 40%;
+  float: left;
+  margin-left: 4em;
+}
+
+.row6 .cell2r6{
+  margin: 1em;
+  padding: 0.5em;
+  width: 40%;
+  float: right;
+  margin-right: 4em;
+}
+
+.row7{
+  padding: 0.5em;
+  width: 50%;
+  display:block;
+  margin:auto;
+
+}
+
+.row7 img{
+  width: 90%;
+  display:block;
+  margin:auto;
+  border: 4px solid red;
+  border-radius: 1em;
+}
+
+.row8{
+  text-align: center;
+  margin-top: 2em;
+
+}
+
+.row8 h3{
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
+
+.row8 label{
+  margin-right: 0.5em;
+}
+
+.row8 input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.row8 input[type=submit] {
+  width: 10%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.row8 input[type=submit]:hover {
+  background-color: green;
+  
+}
+
+.row9 div{
+  margin-top: 2em;
+  border: 2px solid red; 
+  display: block;
+  margin: auto;
+  border-radius: 2em;
+  width: 90%;
+  margin-top: 2em;
+}
+
+.row10{
+  text-align: center;
+  margin-top: 2em;
+}
+
+.row10 h1, h3, p{
+  padding: 0.2em;
+}
+
+.row11{
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 4em;
+  padding: 2em;
+  border: 6px solid red;
+  border-radius: 1em;
+}
+
+.row11 input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.row11 input[type=submit] {
+  width: 25%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.row11 input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.row11 div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer{
+  background-image: url('../img/back.jpg');
+  display: block;
+  margin: auto;
+  padding: 0.5em;
+  height: 5%;
+  width: 95%;
+  margin-top: 5em;
+  border-radius: 2em;
+  border: 2px solid red; 
+}
+
+.footer .cellf{
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 40%;
+  float: left;
+  font-size: 1.4em;
+}
+
+.footer .cellf2{
+  padding: 2em;
+  width: 40%;
+  float: right;
+}
+
+.footer .cellf2 img{
+  margin-left: 2em ;
+  border-radius: 2em;  
+}
+
+
+
+
