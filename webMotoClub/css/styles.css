@@ -16,7 +16,7 @@ font-style: oblique;
 /*Tablet*/
 @media only screen and (max-width: 1200px){
   .container{
-      height: 150em;
+      height: 132em;
       border-left: 0.5em solid red;
       border-right: 0.5em solid red;
   }
