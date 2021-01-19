@@ -1,0 +1,243 @@
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+  
+  /* RESETEO LIMITADO DE PROPIEDADES */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0px;
+      
+  }
+  
+  /* Estilo para las fuentes en toda la página (link) */
+  body {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    background-color: wheat;
+  }
+  
+  /* Establecemos el centrado y las dimensiones de los elementos principales */
+  nav,.container,footer {
+    max-width: 1200px;
+    min-width: 576px;
+    margin:0px auto;
+  }
+
+
+  nav img{
+    width: 9%;
+    padding: 0.5em;
+    float: left;
+  }
+  
+  nav ul li{
+    display: inline;
+    padding: 1em;
+    margin-left: 2.5em;
+    font-size: 28px; 
+    float: left;
+  }
+
+  nav ul li a{
+   color: wheat;
+   text-decoration: none;
+   font-style: italic;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+  /* Estilos para el menú principal */
+  nav {
+    background-color: black;
+    
+  
+    font-size: 1.4;
+    padding: 6px;
+   /* position: -webkit-sticky; */
+    position: sticky; /*nav fixed*/
+    overflow: hidden; 
+    top: 0px;
+    z-index: 100; /*para que cuando este arriba sea una sombra*/
+  }
+  
+  /* Estilos para la cabecera */
+  header {
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Fondo de la cabecera */
+  header img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 2em;
+    border: 2px solid darkred;
+  }
+  
+  
+  /* Call for action para Comprar */
+  aside {
+    background-color: wheat;
+    border-radius: 20px;
+    color: darkred;
+    padding: 10px;
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    top: 30%;
+    width: 20%;
+    border: 4px dashed darkred;
+  }
+  
+  aside a {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  aside h3 {
+    margin: 20px 0px;
+  }
+ 
+  aside a:hover{
+    font-size: 1.5em;
+  }
+
+  /* Elemento principal con las 3 cards */
+  main {
+    margin: 0px auto;
+    width: 80%;
+  }
+  main h1 {
+    text-align: center;
+    padding: 1em;
+    font-style: italic;
+  }
+  
+  /* Línea separados de elementos */
+  /*Agrega la raya roja despues del h1*/ 
+  main h1::after{
+    background-color: darkred;
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+
+  /*Coloca la raya de abajo despues de las img*/ 
+  main::after{
+    background-color: darkred;
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+  
+  /* Estilos para la zona de las cards */
+  .cards {
+    overflow: hidden;
+  }
+  .cards .card {
+    float: left;
+    padding: 25px;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .cards .card img {
+    width: 80%;
+    border-radius: 2em;
+    border: 2px solid darkred;
+  }
+  
+  .cards .card h3 {
+   font-style: oblique;
+  }
+  
+  /* Sección con la botella y los tres párrafos descriptivos */
+  .bottle {
+    margin: 30px auto;
+    overflow-y: auto;
+    width: 70%;
+    
+  }
+  
+  .bottle img {
+    float: left;
+    margin-right: 10%;
+    width: 40%;
+    border-radius: 2em;
+    border: 2px solid darkred;
+  }
+  
+  .bottle div {
+    float: left;
+    margin-top: 20px;
+    text-align: justify;
+    width: 50%;
+   
+  }
+  
+  /* Mostrarmos la primera letra con un borde diferente */
+  .bottle div::first-letter {
+    border-right: 1px solid #121867;
+    border-bottom: 1px solid #121867;
+    color: darkred;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  
+  
+  
+  /* Estilos para el pie de página */
+  footer {
+   background-color: black;
+   
+    clear: both;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 0.8;
+    margin-top: 20px;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  footer address {
+    float: left;
+    width: 20%;
+  }
+  
+  footer div {
+    float: left;
+    text-align: center;
+    width: 60%;
+  }
+  
+  footer section {
+    float: left;
+    text-align: center;
+    width: 20%;
+  }
+  
+  footer img{
+    width: 12%;
+    border-radius: 2em;
+  }

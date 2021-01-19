@@ -1,0 +1,241 @@
+
+
+.container{
+    margin-left: 100px;
+    padding: 0.5em;
+    width: 1200px;
+    height: 1800px;
+    
+}
+    
+    header{
+    width: 20%;
+    }
+    
+    header img{
+     width: 98%;
+     text-align: center;
+    }
+    
+    nav{
+     width: 30%;
+     
+    }
+      
+    nav ul li{
+     margin-bottom: 20px;
+     list-style: none;
+    }
+    
+    nav ul li a{
+     color:darkblue;
+     text-decoration: none;
+     font-family: cursive;
+     font-style: oblique;
+    }
+    
+    main{
+     display: grid;   
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 80%;
+     width: 80%;
+     padding: 2px;
+     border-top: 2px solid darkgray;
+     border-bottom: 2px solid darkgray; 
+    }
+    
+    main article img {
+     width: 90%;
+     border-radius: 2em;
+     margin-top: 2em;
+    }
+    
+    main article h3{
+    font-style: oblique;
+    color: darkblue;
+    }
+    
+    footer{
+     display: grid;   
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 80%;
+     width: 50%; 
+     margin-top: 20px;
+     
+    }
+    
+    footer section img{
+     width: 10%;
+     border-radius: 2em;
+     margin-top: 1em;
+    }
+    
+    footer section h2{
+     font-style: oblique;
+     color: darkblue;
+    
+    }
+    
+    footer section p{
+     font-style: oblique;
+     color: darkblue;
+    }
+
+    
+@media only screen and (max-width: 1024px){
+    .container{
+        margin: 0 auto;
+        width: 1024px;
+    }
+        
+        header{
+        width: 20%;
+        }
+        
+        header img{
+         width: 98%;
+         text-align: center;
+        }
+        
+        nav{
+         width: 30%;
+         
+        }
+          
+        nav ul li{
+         margin-bottom: 20px;
+         list-style: none;
+        }
+        
+        nav ul li a{
+         color:darkblue;
+         text-decoration: none;
+         font-family: cursive;
+         font-style: oblique;
+        }
+        
+        main{
+         display: grid;   
+         grid-template-columns: 50% 50%;
+         grid-template-rows: 80%;
+         width: 50%;
+         padding: 2px;
+         border-top: 2px solid darkgray;
+         border-bottom: 2px solid darkgray; 
+        }
+        
+        main article img {
+         width: 90%;
+         border-radius: 2em;
+         margin-top: 2em;
+        }
+        
+        main article h3{
+        font-style: oblique;
+        color: darkblue;
+        }
+        
+        footer{
+         display: grid;   
+         grid-template-columns: 50% 50%;
+         grid-template-rows: 80%;
+         width: 50%; 
+         margin-top: 20px;
+         
+        }
+        
+        footer section img{
+         width: 10%;
+         border-radius: 2em;
+         margin-top: 1em;
+        }
+        
+        footer section h2{
+         font-style: oblique;
+         color: darkblue;
+        }
+        
+        footer section p{
+         font-style: oblique;
+         color: darkblue;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .container{
+        margin: 0 auto;
+        width: 768px;
+        
+        }
+        
+        header{
+        width: 35%;
+        }
+        
+        header img{
+         width: 98%;
+         text-align: center;
+        }
+        
+        nav{
+         width: 30%;
+        
+        }
+          
+        nav ul li{
+         margin-bottom: 20px;
+         list-style: none;
+        }
+        
+        
+        nav ul li a{
+         color:darkblue;
+         text-decoration: none;
+         font-family: cursive;
+         font-style: oblique;
+        }
+        
+        main{
+         width: 45%;
+         border-top: 2px solid darkgray; 
+         border-bottom: 2px solid darkgray; 
+         display: block;
+        }
+        
+        main article img {
+         width: 65%;
+         border-radius: 2em;
+         margin-top: 2em;
+        
+         
+        }
+        
+        main article h3{
+         font-style: oblique;
+         color: darkblue;
+        }
+        
+        footer{
+         width: 40%; 
+         
+         margin-top: 1em; 
+        }
+        
+        footer section img{
+         width: 15%;
+         margin-top: 2em;
+         border-radius: 2em;
+         margin-top: 1em;
+        }
+        
+        footer section h2{
+         font-style: oblique;
+         color: darkblue;
+        }
+        
+        footer section p{
+            font-style: oblique;
+            color: darkblue;
+           }
+        }
+        
