@@ -13,19 +13,19 @@
         <header id="main-header" class="bg-secondary text-white">
           <div class="container">
               <div class="row">
-                <div class="col-md-6 mr-5">
+                <div class="col-md-7 text-center">
                     <h1>Logistics S.A</h1>
                 </div>
-                 <div class="col-md-1 ml-5">
-                    <jsp:include page="btnEditar.jsp"></jsp:include>
-                </div> 
-                <div class="col-md-1 ml-5">
-                    <jsp:include page="btnEliminar.jsp"></jsp:include>
-                </div>   
-              </div>
+                <div class="col-md-2 mt-2">
+                    <jsp:include page="btnEliminar.jsp"></jsp:include>  
+                </div>
+                <div class="col-md-3 mt-2">
+                    <jsp:include page="btnEditar.jsp"></jsp:include> 
+                </div>
+           </div>
           </div>
         </header>
-        <h1>CLIENTE</h1>
+        <jsp:include page="mercancias.jsp"></jsp:include>  
         <jsp:include page="footer.jsp"></jsp:include>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

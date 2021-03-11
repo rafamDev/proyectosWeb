@@ -1,4 +1,4 @@
-<a href="#" class="text-center" data-toggle="modal" data-target="#modalRegistro">Registro</a> <!-- href="#"  data-target="#modalRegistro" id="modalRegistro" -->
+<a href="#" class="myLink" data-toggle="modal" data-target="#modalRegistro">Registrate</a> 
 <div class="modal fade" id="modalRegistro">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
