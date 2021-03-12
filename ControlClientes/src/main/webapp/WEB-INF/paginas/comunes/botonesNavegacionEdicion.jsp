@@ -15,6 +15,7 @@
                   <a href="${pageContext.request.contextPath}/ServletControlador?accion=eliminar&idCliente=${cliente.id_cliente}"
                      class="btn btn-danger btn-block">   
                   <i class="fas fa-trash"></i> Eliminar cliente
+                  </a>
                 </div>
             </div>    
         </div>

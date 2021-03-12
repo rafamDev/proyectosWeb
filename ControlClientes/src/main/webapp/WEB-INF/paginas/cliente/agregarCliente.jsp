@@ -1,3 +1,4 @@
+<button class="btn btn-success" data-toggle="modal" data-target="#agregarClienteModal">editar</button>
 <div class="modal fade" id="agregarClienteModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">

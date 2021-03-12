@@ -1,4 +1,4 @@
-<a href="#" class="myLink" data-toggle="modal" data-target="#modalRegistro">Registrate</a> 
+<a href="#" class="h4 text-white" data-toggle="modal" data-target="#modalRegistro">Registrate</a>
 <div class="modal fade" id="modalRegistro">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -8,14 +8,14 @@
                     <span>&times;</span>
                 </button>
             </div>
-                <form class="was-validated" method="POST">
+                <form class="was-validated" action="${pageContext.request.contextPath}/ServletControlador?accion=insertar" method="POST">
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control" name="nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="apellido">Password</label>
+                            <label for="password">Password</label>
                             <input type="text" class="form-control" name="password" required>
                         </div>
                         <div class="form-group">

@@ -2,8 +2,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="index.jsp" class="btn btn-primary btn-block"
-                       <i class="fas fa-plus"></i> Regresar al inicio
+                    <a href="${pageContext.request.contextPath}/ServletControlador?accion=regresarAreaCliente" class="btn btn-primary btn-block">
+                       Regresar 
                     </a>
                 </div>
                 <div class="col-md-3">
@@ -12,7 +12,7 @@
                     </button>
                 </div>
                 <div class="col-md-3">
-                  <a href="${pageContext.request.contextPath}/ServletControlador?accion=eliminar&idCliente=${cliente.id_cliente}"
+                  <a href="${pageContext.request.contextPath}/ServletControlador?accion=eliminar&codigo=${cliente.codigo}"
                      class="btn btn-danger btn-block">   
                   <i class="fas fa-trash"></i> Eliminar cliente
                   </a>

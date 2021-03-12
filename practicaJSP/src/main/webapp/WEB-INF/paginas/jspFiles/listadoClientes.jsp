@@ -4,27 +4,35 @@
  <section id="clientes">
      <div class="container">
          <div class="row">
-             <div class="col-md-9">
+             <div class="col-md-10 mt-5">
                  <div class="card">
                      <div class="card-header">
-                         <h4>Listado de clientes</h4>
+                         <h4>Listado de Clientes</h4>
                      </div>
                      <table class="table table-striped">
                          <thead class="thead-dark">
                                <th>#</th>
                                <th>Nombre</th>
                                <th>Apellido</th>
-                               <th>Saldo</th>
+                               <th>email</th>
+                               <th>Telefono</th>
+                               <th>Provincia</th>
+                               <th>Localidad</th>
+                               <th>Direccion</th>
                          </thead>
                          <tbody>
-                             <c:forEach var="cliente" items="${clientes}" varStatus="status"> 
+                            <c:forEach var="cliente" items="${clientes}" varStatus="status"> 
                                  <tr>
                                      <td>${status.count}</td>
                                      <td>${cliente.nombre}</td>
                                      <td>${cliente.apellido}</td>
-                                     <td><fmt:formatNumber value="${cliente.saldo}" type="currency" currencySymbol="&#128"/></td>
+                                     <td>${cliente.email}</td>
+                                     <td>${cliente.telefono}</td>
+                                     <td>${cliente.provincia}</td>
+                                     <td>${cliente.localidad}</td>
+                                     <td>${cliente.direccion}</td>
                                      <td>
-                                         <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&idCliente=${cliente.id_cliente}"
+                                         <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&codigo=${cliente.codigo}"
                                             class="btn btn-primary ml-5">
                                              <i class="fas fa-angle-double-right"></i>Editar
                                          </a>    
@@ -35,25 +43,17 @@
                      </table>
                  </div>
              </div>
-           <div class="col-md-3">
-                <div class="card text-center bg-danger text-white mb-3">
-                     <div class="card-body">
-                         <h3>Saldo total</h3>
-                         <h4 class="display-4">
-                             <i class="las la-users"></i> ${saldoTotal}
-                         </h4>
-                     </div>
-                </div>
-                <div class="card text-center bg-success text-white mb-3">
+           <div class="col-md-2 mt-5">
+                <div class="card text-center bg-info text-white mb-3">
                      <div class="card-body">
                          <h3>Total clientes</h3>
-                         <h4 class="display-4">
+                         <h4 class="display-2">
                              <i class="las la-users"></i> ${totalClientes}
                          </h4>
                      </div>
-                </div>         
+                </div>
+                      
             </div>
          </div>
      </div>
-     <jsp:include page="agregarCliente.jsp"></jsp:include>                      
- </section>
+</section>

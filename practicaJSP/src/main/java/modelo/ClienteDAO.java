@@ -17,17 +17,16 @@ public class ClienteDAO {
    
     private static final String SQL_SELECT = "SELECT * FROM cliente";
 	
-    private static final String SQL_SELECT_BY_ID = "SELECT * FROM cliente WHERE id_cliente=?";
+    private static final String SQL_SELECT_BY_ID = "SELECT * FROM cliente WHERE codigo=?";
 	
-    private static final String SQL_INSERT = "INSERT INTO cliente (nombre,apellido,email,telefono,saldo)"
-			+ "VALUES (?,?,?,?,?)";
+    private static final String SQL_INSERT = "INSERT INTO cliente (nombre,password,apellido,email,telefono,provincia,localidad,direccion)"
+			+ "VALUES (?,?,?,?,?,?,?,?)";
 			
-    private static final String SQL_UPDATE = "UPDATE cliente SET nombre=?, apellido=?, email=?, telefono=?, saldo=?"
-			+ "WHERE id_cliente=?";
+    private static final String SQL_UPDATE = "UPDATE cliente SET nombre=?, password=?, apellido=?, email=?, telefono=?, provincia=?, localidad=?, direccion=? "
+			+ "WHERE codigo=?";
 			
-    private static final String SQL_DELETE = "DELETE FROM cliente WHERE id_cliente=?";
-	
-	
+    private static final String SQL_DELETE = "DELETE FROM cliente WHERE codigo=?";
+   
     public List<Cliente> listar(){
 	Connection con = null;
 	PreparedStatement ps = null;
@@ -98,7 +97,7 @@ public class ClienteDAO {
     }
 	
 	public int insertar(Cliente cliente){
-	  Connection con = null;
+          Connection con = null;
 	  PreparedStatement ps = null;
 	  int rows = 0;
 	     try {
@@ -147,8 +146,8 @@ public class ClienteDAO {
 		}
 	 return rows;     
 	}
-	
-	public int eliminar(Cliente cliente){
+        
+    public int eliminar(Cliente cliente){
 	Connection con = null;
 	PreparedStatement ps = null;
 	int rows = 0;
@@ -164,8 +163,8 @@ public class ClienteDAO {
 		Conexion.close(con);
 	        }
 	 return rows;     
-	}
-        
+	}    
+
     public boolean verficarCliente(String nombre, String password){
      Connection con = null;
      ResultSet rs = null; 
@@ -187,4 +186,5 @@ public class ClienteDAO {
         }
      return false; 
    }      
+
 }

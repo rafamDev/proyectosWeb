@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
  <section id="clientes">
      <div class="container">
          <div class="row">
@@ -21,7 +22,7 @@
                                      <td>${status.count}</td>
                                      <td>${cliente.nombre}</td>
                                      <td>${cliente.apellido}</td>
-                                     <td><fmt:formatNumber value="${cliente.saldo}" type="currency" currencySymbol="$"/></td>
+                                     <td><fmt:formatNumber value="${cliente.saldo}" type="currency" currencySymbol="&#128"/></td>
                                      <td>
                                          <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&idCliente=${cliente.id_cliente}"
                                             class="btn btn-primary ml-5">

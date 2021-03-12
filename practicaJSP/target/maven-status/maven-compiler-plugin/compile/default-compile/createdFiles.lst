@@ -1,5 +1,4 @@
 pojo\Cliente.class
 modelo\Conexion.class
 controlador\ServletControlador.class
-pojo\Mercancia.class
 modelo\ClienteDAO.class
