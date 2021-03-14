@@ -34,10 +34,10 @@ public class ServletControlador extends HttpServlet {
                     this.regresarAreaCliente(request, response);
 		    break;     
                 default: 
-                   System.err.println("");
+                    response.sendRedirect("index.jsp");
 	    }			
         }else{
-            System.err.println("");
+           response.sendRedirect("index.jsp");
         }
     }
 
@@ -57,10 +57,10 @@ public class ServletControlador extends HttpServlet {
                     this.modificarCliente(request, response);
 		    break; 
                 default: 
-                    System.err.println("");
+                    response.sendRedirect("index.jsp");
 	    }			
         }else{
-            System.err.println("");
+            response.sendRedirect("index.jsp");
         }
     }      
 
